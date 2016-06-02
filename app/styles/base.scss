@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.fill {
+	flex: 1;
+}
+
+.fill-width {
+	width: 100%;
+}
+
+.inline {
+	display: inline-block !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.btn {
+	background-color: #f89635;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	padding: 10px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+
+	&.disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+}
+
+.btn:active {
+	opacity: 0.5;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.bg-gray {
+	background-color: #ccc;
+}
+
+.black {
+	color: black;
+}
+
+.white {
+	color: white;
+}
+
+.printblack {
+	color: black;
+	padding: 9px 5px 0px 20px;
+}
+
+.bgcolor-form1 {
+	background-color: $form-color1 !important;
+}
+
+.bgcolor-form2 {
+	background-color: $form-color2 !important;
+}
+
+.bgcolor-form3 {
+	background-color: $form-color3 !important;
+}
+
+.bgcolor-form4 {
+	background-color: $form-color4 !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.vertical-center {
+	vertical-align: middle;
+}
+
+.modal-vertical-center {
+	vertical-align: middle;
+	padding: 10px 30px 10px 30px;
+}
+
+.modal-button{
+	float: right;
+	margin-right:20px;
+	padding: 10px;
+}
+
+.black-bordered {
+	border: 1px solid black;
+}
+
+input[type="text"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled {
+	opacity: 0.8;
+}

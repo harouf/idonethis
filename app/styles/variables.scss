@@ -1,0 +1,21 @@
+$app-brand-color: rgb(246, 182, 76);
+$form-color1: rgb(101, 121, 158);
+$form-color2: rgb(146, 132, 88);
+$form-color3: rgb(17, 122, 125);
+$form-color4: rgb(246, 182, 76);
+
+@mixin gray-gradient-background() {
+  background: rgb(219, 217, 211); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(245, 245, 243), rgb(193, 189, 178)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(245, 245, 243), rgb(193, 189, 178)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(245, 245, 243), rgb(193, 189, 178)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(245, 245, 243), rgb(193, 189, 178)); /* Standard syntax */
+}
+
+@mixin app-gradient-background() {
+  background: rgb(244, 204, 128); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(252, 237, 194), rgb(237, 174, 67)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(252, 237, 194), rgb(237, 174, 67)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(252, 237, 194), rgb(237, 174, 67)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(252, 237, 194), rgb(237, 174, 67)); /* Standard syntax */
+}
