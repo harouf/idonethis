@@ -17,6 +17,9 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.production.config.js --progress --profile --colors",
     "dev": "cross-env NODE_ENV=development concurrently --kill-others \"nodemon --watch server server/api.js\" \"node server/server.js\""
   },
+  "engines": {
+    "node": "5.9.1"
+  },
   "authors": [
     "Fujio Harou"
   ],
@@ -35,6 +38,7 @@
     "keymirror": "^0.1.1",
     "loaders.css": "^0.1.2",
     "lodash": "^4.6.1",
+    "mail-listener2": "^0.1.8",
     "moment": "^2.13.0",
     "numeral": "^1.5.3",
     "pretty-error": "^2.0.0",

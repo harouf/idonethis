@@ -15,9 +15,9 @@ module.exports = function(agenda) {
 	  const accmpDate = '2016-05-31'; //curDate.format('YYYY-MM-DD');
 
 	  template.to = to;
-	  template.subject = template.subject.replace('{date}', curDate.format('dddd, MMM DD'))
+	  template.subject = template.subject.replace('{date}', curDate.format('dddd, MMMM DD'))
 
-	  template.html = template.html.replace('{date}', curDate.format('dddd, MMM DD')).replace('{last_year_date}', curDate.subtract(1, 'year').format('dddd, MMM DD, YYYY'));
+	  template.html = template.html.replace('{date}', curDate.format('dddd, MMMM DD')).replace('{last_year_date}', curDate.subtract(1, 'year').format('dddd, MMMM DD, YYYY'));
 
 	  db.ref('accomplishments/' + uid + '/' + accmpDate).once('value', (snapshot) => {
 	  	const data = snapshot.val();

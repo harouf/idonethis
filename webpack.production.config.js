@@ -41,7 +41,7 @@ module.exports = {
     //new ExtractTextPlugin('[name]-[chunkhash].css', {allChunks: true}),
     new webpack.DefinePlugin({
       __DEVELOPMENT__: false,
-      __DEVTOOLS__: false  // <------- DISABLE redux-devtools HERE,
+      __DEVTOOLS__: false,  // <------- DISABLE redux-devtools HERE,
       'process.env': {
         NODE_ENV: JSON.stringify('production')
       }
