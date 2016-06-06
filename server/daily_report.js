@@ -12,7 +12,7 @@ module.exports = function(agenda) {
 	  const uid = job.attrs.data.uid;
 	  const template = _.clone(config.get('daily_report.template'));
 	  const curDate = moment();
-	  const accmpDate = '2016-05-31'; //curDate.format('YYYY-MM-DD');
+	  const accmpDate = '2016-05-26'; //curDate.format('YYYY-MM-DD');
 
 	  template.to = to;
 	  template.subject = template.subject.replace('{date}', curDate.format('dddd, MMMM DD'))
@@ -36,12 +36,13 @@ module.exports = function(agenda) {
 	  	mainBody = mainBody + "</ul>\n";
 	  	
 	  	template.html = template.html.replace('{body}', mainBody);
+	  	//template.html = template.html.replace('{body}', data.fullText);
 		  
 		  var email = new sendgrid.Email(template);
 		  sendgrid.send(email, function(err, json) {
 			  if (err) { return console.error(err); }
 			  console.log(json);
-		  	done();
+		  		done();
 			});
 	  });
 	});

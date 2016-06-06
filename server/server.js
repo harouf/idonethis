@@ -1,10 +1,10 @@
 var path = require('path');
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('../webpack.config');
 var express = require('express');
 
 if (process.env.NODE_ENV == 'development'){
+  var webpack = require('webpack');
+  var WebpackDevServer = require('webpack-dev-server');
+  var config = require('../webpack.config');
   var server = new WebpackDevServer(webpack(config), {
     contentBase: path.resolve(__dirname, '..', 'static'),
     hot: true,

@@ -15,8 +15,8 @@ agenda.on('ready', function() {
 	  _.each(users, (val, key) => {
 	  	console.log('id: ', key);
 	  	console.log('email: ', val.email);
-	  	agenda.every(config.get('daily_report.schedule'), 'daily report', {uid: key, email: val.email});
-	  	//agenda.schedule('in 3 seconds', 'daily report', {uid: key, email: val.email});
+	  	//agenda.every(config.get('daily_report.schedule'), 'daily report', {uid: key, email: val.email});
+	  	agenda.schedule('in 3 seconds', 'daily report', {uid: key, email: val.email});
 	  });
 	}, function(err) {
 		console.error(err);
