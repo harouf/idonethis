@@ -1,0 +1,21 @@
+{
+	"database": "mongodb://localhost:27017/idonethis",
+	"firebase": {
+		"serviceKeyPath": "config/firebase_key.json",
+		"databaseSecret": "23hmvnXIUPuPqaNRAfQRZuY5Qpq0VnEsR0ZaUT4i",
+		"databseUrl": "https://project-8909477892182731103.firebaseio.com/"
+	},
+	"daily_report": {
+		"schedule": "0 8 * * *",
+		"template" : {
+			"from": "donesjlabs@gmail.com",
+			"fromname": "iDoneThis",
+			"replyto": "donesjlabs@gmail.com",
+			"subject": "What'd you get done today? {date}",
+			"html": "<div style='text-align: center;'>\n<div style='max-width: 600px; display: inline-block;'>\n<h1>Hi there. What'd you get done today?</h1>\n<p>Take 30 seconds to write out what you got done today. Just <strong>reply to this email</strong> or <a href='http://localhost:3000'>enter your dones on the web</a></p>\n<br/><br/>\n<div style='text-align: left;'><h2>Last year</h2>\n<p>This is what you got done on this day one year ago. {last_year_date}</p>\n<h3>{date}</h3>\n{body}\n</div>\n</div>\n</div>"
+		}
+	},
+	"sendgrid": {
+		"apiKey": "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"
+	} 
+}
