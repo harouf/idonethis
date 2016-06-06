@@ -6,7 +6,7 @@
 		"databseUrl": "https://project-8909477892182731103.firebaseio.com/"
 	},
 	"daily_report": {
-		"schedule": "0 8 * * *",
+		"schedule": "0 * * * *",
 		"template" : {
 			"from": "donesjlabs@gmail.com",
 			"fromname": "iDoneThis",
