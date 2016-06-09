@@ -9,8 +9,8 @@ const app = express();
 const port = process.env.NODE_ENV == 'development' ? 3001 : 8081;
 
 const server = new http.Server(app);
-
-require('./worker');
+const parser = require('./parser');
+// require('./worker');
 
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -26,6 +26,8 @@ app.use(function(req, res, next) {
 app.get('/test', function(req, res) {
   res.json({test: false});
 });
+
+app.use('/parse', parser);
 
 app.listen(port, function(err) {
   if (err) {
